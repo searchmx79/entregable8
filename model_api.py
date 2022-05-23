@@ -208,7 +208,7 @@ class ModelPerformanceAPI(Resource):
 
 
 # =======================================================================================
-@app.route('/templates/')
+@app.route('/metrics/')
 def render_metrics():
     """ Método que obtiene las métricas del modelo y las envía a la plantilla HTML para
         generar las gráficas.
@@ -253,3 +253,5 @@ def trunc(number, digits):
     import math
     stepper = 10.0 ** digits
     return math.trunc(stepper * number) / stepper
+
+    
